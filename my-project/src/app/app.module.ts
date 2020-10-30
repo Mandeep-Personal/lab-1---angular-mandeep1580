@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
+import { ProductItemsComponent } from './product-items/product-items.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MainNavComponent
+    MainNavComponent,
+    ProductItemsComponent
   ],
   imports: [
     BrowserModule
