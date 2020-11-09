@@ -4,8 +4,12 @@
             <h1>Popular Books</h1>
         </div>
 
+        <div>
         <div class="row text-center">
-            <app-product-item></app-product-item>
+        <div *ngFor = "let product of productList" class="product-card">
+            <app-product-item [productItem]= "product"></app-product-item>
+        </div>
+        </div>
         </div>
     </div>
 
