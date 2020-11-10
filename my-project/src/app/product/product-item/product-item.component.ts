@@ -10,7 +10,7 @@ import { CartItemService } from 'src/app/services/cart-item.service';
 })
 export class ProductItemComponent implements OnInit {
   @Input() productItem: Product
-  constructor( private data: CartItemService) { }
+  constructor(private data: CartItemService) { }
 
   ngOnInit(): void {
   }
