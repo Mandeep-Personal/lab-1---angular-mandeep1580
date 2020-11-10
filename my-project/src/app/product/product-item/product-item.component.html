@@ -3,8 +3,10 @@
         <div class="card card-product-grid" style="width: 15rem;">
             <img [src]="productItem.imagePath" class="card-img-top image" alt="product" />
             <div class="card-body">
+                
                 <div class = "card-text">
                 <h4 class="card-title">{{ productItem.name }}</h4>
+                <button type="button" [routerLink]="['/products', productItem.id]" class="btn btn-info py-2 btn-block">See Product</button>
             </div>
             </div>
             <div class="card-footer">

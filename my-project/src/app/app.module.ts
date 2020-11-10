@@ -9,6 +9,9 @@ import { ProductItemComponent } from './product/product-item/product-item.compon
 import { MainFooterComponent } from './main-footer/main-footer.component';
 import { CartComponent } from './cart/cart.component';
 import { CartItemComponent } from './cart/cart-item/cart-item.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+
 
 @NgModule({
   declarations: [
@@ -19,11 +22,13 @@ import { CartItemComponent } from './cart/cart-item/cart-item.component';
     ProductItemComponent,
     MainFooterComponent,
     CartComponent,
-    CartItemComponent
+    CartItemComponent,
+    ProductDetailComponent
     
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
