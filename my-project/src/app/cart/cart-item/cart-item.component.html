@@ -1,11 +1,11 @@
 
 <div class="list-item">
-    <span><strong>productName: </strong>
-    $price
+    <span><strong>{{cartItem.productName}}: </strong>
+    ${{cartItem.price}}
     <br>
     <strong>Qty:</strong>
-    qty
+    {{cartItem.qty}}
     <br>
     <strong>Total:</strong>
-    </span>
+    {{(cartItem.qty * cartItem.price)}}</span>
 </div>

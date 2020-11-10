@@ -1,14 +1,14 @@
-<div class="row text-center">
-    <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-            <img [src]="productItem.imagePath" class="card-img-top" alt="product" />
+
+    <div class="col-lg-3 col-md-6">
+        <div class="card card-product-grid" style="width: 15rem;">
+            <img [src]="productItem.imagePath" class="card-img-top image" alt="product" />
             <div class="card-body">
                 <h4 class="card-title">{{productItem.name}}</h4>
-                <p class="card-text">{{productItem.description}}</p>
-                <p class="card-text">${{productItem.price}}</p>
+                
             </div>
             <div class="card-footer">
-                <button href="#" type="button" id="add-btn-1" class="bookcart btn btn-primary">Add to Cart</button
+                <p class="card-text">${{productItem.price}}</p>
+                <button type="button" (click)="addToCart()" class="btn btn-primary">Add to Cart</button
                     >
             </div>
         </div>

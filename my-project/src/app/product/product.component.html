@@ -1,4 +1,4 @@
-<section class="products-section-py4 pt-4">
+<section class="products-section py4">
     <div class="container">
         <div class="card-title text-center">
             <h1>Popular Books</h1>
@@ -6,7 +6,7 @@
 
         <div>
         <div class="row text-center">
-        <div *ngFor = "let product of productList" class="product-card">
+        <div *ngFor = "let product of productList" class="product-card px1 my-3">
             <app-product-item [productItem]= "product"></app-product-item>
         </div>
         </div>
