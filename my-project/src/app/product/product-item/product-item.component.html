@@ -3,11 +3,12 @@
         <div class="card card-product-grid" style="width: 15rem;">
             <img [src]="productItem.imagePath" class="card-img-top image" alt="product" />
             <div class="card-body">
-                <h4 class="card-title">{{productItem.name}}</h4>
-                
+                <div class = "card-text">
+                <h4 class="card-title">{{ productItem.name }}</h4>
+            </div>
             </div>
             <div class="card-footer">
-                <p class="card-text">${{productItem.price}}</p>
+                <div class="price mt-1 mb-1">${{ productItem.price }}</div>
                 <button type="button" (click)="addToCart()" class="btn btn-primary">Add to Cart</button>
             </div>
         </div>

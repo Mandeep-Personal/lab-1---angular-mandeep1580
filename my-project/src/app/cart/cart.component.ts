@@ -8,14 +8,13 @@ import { Product } from 'src/app/product/product.model'
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
-  cartItems=[]
+  cartItems  = []
   cartTotal = 0
 
-  constructor(private data: CartItemService) { }
+  constructor(private data: CartItemService) {}
 
   ngOnInit(): void {
-
-    this.data.getData().subscribe((product: Product ) => {
+      this.data.getData().subscribe((product: Product ) => {
       this.addProduct(product)
     })
   }
@@ -37,7 +36,7 @@ export class CartComponent implements OnInit {
         productId: product.id,
         productName: product.name,
         qty: 1,
-        price: product.price
+        price: product.price,
       })
     }
 
